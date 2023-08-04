@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header><img src="" alt="">
+    <section>
+        <img src="./img/stars.png" id="stars">
+        <img src="./img/moon.png" id="moon">
+        <img src="./img/mountains_behind.png" id="mountains_behind">
+        <h1 id="text">Moon light</h1>
+        <a href="#" id="btn">Explore</a>
+        <img src="./img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec">
+        <h1>Parallax scrolling Effects</h1>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur harum explicabo ex. Nulla ea quibusdam tempora, laudantium fugiat voluptas et deserunt delectus! Impedit id inventore facere iure voluptatum, quasi assumendalorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, animi dicta beatae provident ducimus mollitia. Ratione facere aperiam autem dicta, voluptate minima at nostrum voluptatibus repellendus numquam maiores, impedit consectetur. <br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur harum explicabo ex. Nulla ea quibusdam tempora, laudantium fugiat voluptas et deserunt delectus! Impedit id inventore facere iure voluptatum, quasi assumendalorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, animi dicta beatae provident ducimus mollitia. Ratione facere aperiam autem dicta, voluptate minima at nostrum voluptatibus repellendus numquam maiores, impedit consectetur.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur harum explicabo ex. Nulla ea quibusdam tempora, laudantium fugiat voluptas et deserunt delectus! Impedit id inventore facere iure voluptatum, quasi assumendalorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, animi dicta beatae provident ducimus mollitia. Ratione facere aperiam autem dicta, voluptate minima at nostrum voluptatibus repellendus numquam maiores, impedit consectetur. <br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur harum explicabo ex. Nulla ea quibusdam tempora, laudantium fugiat voluptas et deserunt delectus! Impedit id inventore facere iure voluptatum, quasi assumendalorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, animi dicta beatae provident ducimus mollitia. Ratione facere aperiam autem dicta, voluptate minima at nostrum voluptatibus repellendus numquam maiores, impedit consectetur.<br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur harum explicabo ex. Nulla ea quibusdam tempora, laudantium fugiat voluptas et deserunt delectus! Impedit id inventore facere iure voluptatum, quasi assumendalorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, animi dicta beatae provident ducimus mollitia. Ratione facere aperiam autem dicta, voluptate minima at nostrum voluptatibus repellendus numquam maiores, impedit consectetur.</p> 
+    </div>
+    <script>
+        let stars=document.getElementById('stars')
+        let moon=document.getElementById('moon')
+        let mountains_behind=document.getElementById('mountains_behind')
+        let text=document.getElementById('text')
+        let btn=document.getElementById('btn')
+        let mountains_front=document.getElementById('mountains_front')
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 +'px';  
+            moon.style.top = value * 1.05 +'px';  
+            mountains_behind.style.top = value * 0.5 +'px';
+            mountains_front.style.top = value * 0 +'px';
+            text.style.marginRight = value * 5 +'px';  
+            text.style.margintop = value * 1 +'px';  
+            btn.style.margintop = value * 4 +'px';  
+            Headers.style.top=value * 0.5 +'px';
+
+
+
+                    
+
+
+        })
+        
+
+
+    </script>
+    
+</body>
+</html>
